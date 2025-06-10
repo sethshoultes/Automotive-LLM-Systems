@@ -109,6 +109,8 @@ class Settings:
         # Derived properties
         self.log_level = self.logging.level
         self.log_file = self.logging.file_path
+        self.debug = os.getenv('AUTOMOTIVE_LLM_DEBUG', 'false').lower() == 'true'
+        self.mock_mode = os.getenv('AUTOMOTIVE_LLM_MOCK_MODE', 'false').lower() == 'true'
     
     def _find_config_file(self) -> Optional[str]:
         """Find configuration file in standard locations."""
