@@ -1,4 +1,4 @@
-# Automotive LLM System
+![2025-06-10_11-44-27](https://github.com/user-attachments/assets/21b7c18f-f967-4f6a-955b-ccf7db3bf0d5)# Automotive LLM System
 
 > **Local AI assistant for classic cars with voice control and vehicle integration**
 
@@ -180,7 +180,8 @@ python src/main.py --config config-local.yaml
 - **Active Alerts**: Real-time safety and performance warnings
 - **Session Tracking**: Automatic driving session analysis
 
-![Automotive Analytics Dashboard](https://github.com/user-attachments/assets/dashboard-screenshot.jpg)
+![Automotive Analytics Dashboard](https://github.com/user-attachments/assets/1742f34f-2541-470b-9074-1af20762323f)
+
 *Live dashboard showing real-time vehicle performance metrics, system status, and analytics*
 
 ### **Data Collection**
