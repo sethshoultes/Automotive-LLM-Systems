@@ -180,7 +180,8 @@ python src/main.py --config config-local.yaml
 - **Active Alerts**: Real-time safety and performance warnings
 - **Session Tracking**: Automatic driving session analysis
 
-![Automotive Analytics Dashboard](https://github.com/user-attachments/assets/dashboard-screenshot.png)
+![Automotive Analytics Dashboard](https://github.com/user-attachments/assets/1742f34f-2541-470b-9074-1af20762323f)
+
 *Live dashboard showing real-time vehicle performance metrics, system status, and analytics*
 
 ### **Data Collection**
