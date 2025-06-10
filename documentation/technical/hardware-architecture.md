@@ -7,7 +7,8 @@
 - microSD card (128GB+ Class 10) for OS
 - Samsung T9 Portable SSD (2TB) for LLM models and data storage
 - Hailo-8 AI acceleration module for inference optimization
-- Dual 4K micro-HDMI outputs (optional dashboard display)
+- 10.1" capacitive touch screen for Raspberry Pi (primary dashboard display)
+- Dual 4K micro-HDMI outputs for additional displays
 - 40-pin GPIO header for vehicle interfaces
 
 ## AI Acceleration
@@ -107,8 +108,9 @@
 3. **Vehicle Data**: OBD-II/CAN → Pi 5 via USB/SPI
 4. **Vehicle Control**: Pi 5 GPIO → Relay modules → Vehicle systems
 5. **Power**: Vehicle 12V → Power management → Pi 5
-6. **Display** (optional): HDMI → Dashboard screen
-7. **AI Processing**: Hailo-8 → Enhanced inference performance
+6. **Primary Display**: 10.1" capacitive touch screen → Pi 5 (DSI/HDMI)
+7. **Secondary Display** (optional): HDMI → Additional dashboard screen
+8. **AI Processing**: Hailo-8 → Enhanced inference performance
 
 ## Performance Capabilities
 With the upgraded hardware configuration:
@@ -121,6 +123,7 @@ With the upgraded hardware configuration:
 
 ## Estimated Component Costs
 - Raspberry Pi 5 (16GB): $120
+- 10.1" capacitive touch screen: $100
 - Samsung T9 Portable SSD (2TB): $180
 - Hailo-8 AI accelerator: $70
 - microSD card: $25
@@ -131,4 +134,4 @@ With the upgraded hardware configuration:
 - Enclosure + mounting: $60
 - Miscellaneous (cables, relays, etc.): $50
 
-**Total estimated cost: ~$640**
+**Total estimated cost: ~$740**

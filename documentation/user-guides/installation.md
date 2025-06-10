@@ -6,6 +6,7 @@
 
 #### Raspberry Pi 5 Setup
 - **Raspberry Pi 5 (16GB RAM)** - Main computing platform
+- **10.1" capacitive touch screen** for Raspberry Pi - Primary dashboard display
 - **Samsung T9 Portable SSD (2TB)** - High-speed external storage
 - **Hailo-8 AI Accelerator** - Neural processing acceleration
 - **High-quality microSD card** (64GB+ Class 10) for OS

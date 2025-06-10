@@ -91,6 +91,7 @@ Export and reporting          Maintenance scheduling
 
 ### **Hardware Platform**
 - **Raspberry Pi 5** (16GB) with Samsung T9 SSD (2TB)
+- **10.1" Capacitive Touch Screen** for Raspberry Pi
 - **Hailo-8 AI Accelerator** for neural processing
 - **4-Microphone Array** for 360° voice capture  
 - **Vehicle Integration** via OBD-II and CAN bus
@@ -140,6 +141,19 @@ python src/main.py --debug
 # View real-time performance, manage alerts, export data
 ```
 
+### **Try It Out (No Hardware Needed)**
+```bash
+# Clone and test immediately
+git clone https://github.com/yourusername/automotive-llm-system.git
+cd automotive-llm-system && python3 -m venv venv
+source venv/bin/activate && pip install -r requirements.txt
+
+# Quick verification (2 minutes)
+python tests/test_system.py
+
+# See the full test suite below ⬇️
+```
+
 ### **Production Installation**
 ```bash
 # On Raspberry Pi 5 with Raspberry Pi OS
@@ -165,6 +179,9 @@ python src/main.py --config config-local.yaml
 - **Performance Metrics**: Engine, thermal, and efficiency data
 - **Active Alerts**: Real-time safety and performance warnings
 - **Session Tracking**: Automatic driving session analysis
+
+![Automotive Analytics Dashboard](https://github.com/user-attachments/assets/dashboard-screenshot.png)
+*Live dashboard showing real-time vehicle performance metrics, system status, and analytics*
 
 ### **Data Collection**
 - **Configurable Logging**: Minimal to diagnostic detail levels
@@ -208,6 +225,36 @@ python src/main.py --config config-local.yaml
 ❌ Transmission shifting           ❌ Suspension control
 ```
 
+## 🧪 **Testing & Development**
+
+### **Complete Test Suite** (No Hardware Required)
+```bash
+# Basic system functionality (2 minutes)
+python tests/test_system.py
+
+# Full integration with data export (5 minutes)  
+python tests/comprehensive_test.py
+
+# Live dashboard with real-time monitoring
+python tests/enhanced_dashboard.py
+# → Open browser to http://localhost:8080
+
+# Realistic vehicle simulation  
+python tests/virtual_drive_test.py
+
+# Run all tests
+python tests/run_test_suite.py
+```
+
+### **Key Testing Features**
+- **🎭 Mock Mode**: Complete system simulation without vehicle hardware
+- **📊 Live Dashboard**: Real-time monitoring, debugging, and data visualization
+- **💾 Data Export**: CSV, JSON, SQLite formats with realistic automotive data
+- **🚗 Virtual Drive**: Multi-scenario vehicle simulation (city, highway, mountain)
+- **📈 Analytics**: Performance metrics, trending, and session tracking
+
+**[📋 Complete Testing Documentation](tests/README.md)**
+
 ## 📚 **Documentation**
 
 | **For Users** | **For Developers** | **Technical Specs** |
@@ -215,13 +262,13 @@ python src/main.py --config config-local.yaml
 | [🚀 Getting Started](documentation/getting-started/README.md) | [💻 Developer Guide](documentation/user-guides/developer-guide.md) | [🔧 Hardware Architecture](documentation/technical/hardware-architecture.md) |
 | [📖 User Guide](documentation/user-guides/user-guide.md) | [🔍 API Reference](documentation/reference/api/components.md) | [⚙️ Software Architecture](documentation/technical/software-architecture.md) |
 | [🔧 Installation Guide](documentation/user-guides/installation.md) | [📊 Current Status](documentation/getting-started/current-status.md) | [🚗 Vehicle Integration](documentation/technical/vehicle-integration.md) |
-| [📊 Analytics Guide](documentation/user-guides/analytics-guide.md) | [🧪 Testing Framework](documentation/user-guides/developer-guide.md#testing-framework) | [🛡️ Safety & Security](documentation/technical/safety-security.md) |
+| [📊 Analytics Guide](documentation/user-guides/analytics-guide.md) | [🧪 Testing Framework](tests/README.md) | [🛡️ Safety & Security](documentation/technical/safety-security.md) |
 
 **[📚 Complete Documentation Index](documentation/README.md)**
 
 ## 🎯 **Project Status**
 
-### ✅ **Fully Implemented**
+### ✅ **Fully Implemented & Tested**
 - Complete voice processing pipeline with wake word detection
 - Local LLM integration with automotive-specific training
 - Comprehensive vehicle interface (OBD-II + CAN bus)
@@ -231,7 +278,7 @@ python src/main.py --config config-local.yaml
 - Multi-layer safety system with emergency protocols
 
 ### 🔧 **Hardware Requirements**
-- **Estimated Cost**: ~$640 for complete system
+- **Estimated Cost**: ~$740 for complete system (including 10.1" touch screen)
 - **Vehicle Compatibility**: Any vehicle with OBD-II port (1996+)
 - **Installation**: Professional installation recommended
 - **Power**: 12V automotive integration with backup systems

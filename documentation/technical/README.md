@@ -19,6 +19,7 @@ This project enables classic car owners to add modern AI-powered voice control t
 
 ### Core Components
 - **Raspberry Pi 5 (16GB RAM)** - Main computing platform
+- **10.1" Capacitive Touch Screen** for Raspberry Pi - Primary dashboard display
 - **Samsung T9 Portable SSD (2TB)** - High-speed storage for models
 - **Hailo-8 AI Accelerator** - Neural processing acceleration
 - **4-Microphone USB Array** - 360-degree voice capture
@@ -31,7 +32,7 @@ This project enables classic car owners to add modern AI-powered voice control t
 - **Relay Modules** - Vehicle system switching
 - **Environmental Enclosure** - IP54 rated protection
 
-**Estimated Total Cost: ~$640**
+**Estimated Total Cost: ~$740**
 
 ## 💻 Software Architecture
 

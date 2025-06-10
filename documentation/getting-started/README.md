@@ -227,6 +227,7 @@ screen /dev/ttyUSB0 38400
 
 ### Production Environment (Raspberry Pi)
 - **Raspberry Pi 5**: 16GB RAM model recommended
+- **Display**: 10.1" capacitive touch screen for Raspberry Pi
 - **Storage**: Samsung T9 SSD (2TB) or equivalent
 - **Audio**: 4-microphone USB array
 - **Vehicle**: OBD-II port (1996+ vehicles in US)
