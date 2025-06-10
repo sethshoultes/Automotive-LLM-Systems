@@ -278,9 +278,10 @@ python tests/run_test_suite.py
 - Multi-layer safety system with emergency protocols
 
 ### 🔧 **Hardware Requirements**
-- **Estimated Cost**: ~$740 for complete system (including 10.1" touch screen)
+- **Estimated Cost**: ~$720-$750 for complete system (including 10.1" touch screen)
 - **Vehicle Compatibility**: Any vehicle with OBD-II port (1996+)
-- **Installation**: Professional installation recommended
+- **Connection Options**: USB, Bluetooth, hardwired UART, or direct CAN bus
+- **Installation**: Professional installation recommended for permanent setups
 - **Power**: 12V automotive integration with backup systems
 
 ### 🎤 **Voice Commands Working**

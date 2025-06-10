@@ -17,10 +17,26 @@
 - **3.5mm audio cable** to vehicle audio system
 - **USB audio adapter** (optional, for better audio quality)
 
-#### Vehicle Integration Hardware
-- **ELM327 OBD-II adapter** (USB connection)
+#### Vehicle Integration Hardware (Choose One)
+
+**Option A: USB OBD-II (Development/Testing)**
+- **ELM327 OBD-II USB adapter**
+- Simple plug-and-play connection
+
+**Option B: Bluetooth OBD-II (Wireless)**
+- **ELM327 Bluetooth OBD-II adapter**
+- Wireless connection, clean installation
+
+**Option C: Hardwired UART OBD-II (Permanent)**
+- **ELM327 UART module** (non-USB version)
+- Direct GPIO connection for permanent installation
+
+**Option D: CAN Bus Direct (Advanced)**
 - **MCP2515 CAN controller** with SPI interface
-- **CAN transceiver** (MCP2562 or similar)
+- **MCP2562 CAN transceiver** for signal conversion
+- Vehicle-specific CAN bus access
+
+#### Additional Hardware
 - **12V to 5V power converter** (automotive grade)
 - **Relay modules** (8-channel, 12V automotive relays)
 - **Environmental enclosure** (IP54 rated)

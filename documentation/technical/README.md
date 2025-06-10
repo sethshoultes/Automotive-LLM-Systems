@@ -25,14 +25,16 @@ This project enables classic car owners to add modern AI-powered voice control t
 - **4-Microphone USB Array** - 360-degree voice capture
 - **Pi Camera Module 3** - Driver monitoring and cabin awareness
 
-### Vehicle Integration
-- **ELM327 OBD-II Adapter** - Basic diagnostic access
-- **MCP2515 CAN Controller** - Advanced vehicle system control
+### Vehicle Integration (Choose One)
+- **USB OBD-II**: ELM327 USB adapter for development/testing
+- **Bluetooth OBD-II**: ELM327 Bluetooth for wireless connection  
+- **Hardwired UART**: ELM327 UART module for permanent installation
+- **CAN Bus Direct**: MCP2515/MCP2562 for advanced vehicle control
 - **12V Power Management System** - Automotive power integration
 - **Relay Modules** - Vehicle system switching
 - **Environmental Enclosure** - IP54 rated protection
 
-**Estimated Total Cost: ~$740**
+**Estimated Total Cost: ~$720-$750** (depending on vehicle integration option)
 
 ## 💻 Software Architecture
 

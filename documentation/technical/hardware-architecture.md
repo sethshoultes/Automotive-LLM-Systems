@@ -39,16 +39,40 @@
 - Driver attention monitoring with Hailo acceleration
 
 ## Vehicle Integration Interfaces
-**OBD-II Port Connection**
-- ELM327 OBD-II USB adapter
-- Real-time vehicle diagnostics access
-- Engine parameters, fault codes, fuel economy
 
-**CAN Bus Interface (Advanced)**
+### **OBD-II Connection Options**
+
+**Option 1: USB Connection (Development/Testing)**
+- ELM327 OBD-II USB adapter
+- Plug-and-play via USB port on Pi 5
+- Easy installation and removal
+- Cost: ~$20
+
+**Option 2: Bluetooth Connection (Wireless)**
+- ELM327 Bluetooth OBD-II adapter
+- Wireless connection to Pi 5's built-in Bluetooth
+- Clean installation with no wired connection
+- Automatic pairing and reconnection
+- Cost: ~$25
+
+**Option 3: Hardwired UART Connection (Permanent Installation)**
+- ELM327 UART module (non-USB version)
+- Direct connection to Pi 5 GPIO pins (UART)
+- Permanent installation suitable for vehicle mounting
+- Professional appearance with no external adapters
+- Connection: GPIO 14 (TXD), GPIO 15 (RXD), 5V, GND
+- Cost: ~$15
+
+### **CAN Bus Direct Integration (Advanced)**
+**Hardwired CAN Controller Setup**
 - MCP2515 CAN controller with SPI interface
-- Direct integration with vehicle's CAN network
-- Access to detailed vehicle systems data
+- MCP2562 CAN transceiver for signal conversion
+- Direct connection to Pi 5 SPI pins (GPIO 7,8,9,10,11)
+- Hardwired to vehicle's CAN-H and CAN-L bus lines
+- Full vehicle system access beyond OBD-II standard
 - Requires vehicle-specific protocol knowledge
+- Professional installation recommended
+- Cost: ~$30
 
 **GPIO Vehicle Controls**
 - Relay modules for switching vehicle accessories
@@ -105,7 +129,11 @@
 ## Integration Points Summary
 1. **Audio In**: USB microphone array → Pi 5
 2. **Audio Out**: 3.5mm → Vehicle stereo system
-3. **Vehicle Data**: OBD-II/CAN → Pi 5 via USB/SPI
+3. **Vehicle Data Options**:
+   - **USB**: ELM327 USB → Pi 5 USB port
+   - **Bluetooth**: ELM327 Bluetooth → Pi 5 Bluetooth
+   - **UART**: ELM327 UART → Pi 5 GPIO (14,15)
+   - **CAN Bus**: MCP2515/2562 → Pi 5 SPI → Vehicle CAN bus
 4. **Vehicle Control**: Pi 5 GPIO → Relay modules → Vehicle systems
 5. **Power**: Vehicle 12V → Power management → Pi 5
 6. **Primary Display**: 10.1" capacitive touch screen → Pi 5 (DSI/HDMI)
@@ -122,6 +150,8 @@ With the upgraded hardware configuration:
 - Enhanced multitasking performance
 
 ## Estimated Component Costs
+
+### **Base System**
 - Raspberry Pi 5 (16GB): $120
 - 10.1" capacitive touch screen: $100
 - Samsung T9 Portable SSD (2TB): $180
@@ -129,9 +159,14 @@ With the upgraded hardware configuration:
 - microSD card: $25
 - Microphone array: $50
 - Camera module: $25
-- OBD-II adapter: $20
 - Power management: $40
 - Enclosure + mounting: $60
 - Miscellaneous (cables, relays, etc.): $50
 
-**Total estimated cost: ~$740**
+### **Vehicle Integration Options** (choose one)
+- **USB OBD-II**: ELM327 USB adapter: $20
+- **Bluetooth OBD-II**: ELM327 Bluetooth adapter: $25
+- **Hardwired UART**: ELM327 UART module: $15
+- **CAN Bus Direct**: MCP2515 + MCP2562 + wiring: $30
+
+**Total estimated cost: ~$720-$750** (depending on vehicle integration choice)
